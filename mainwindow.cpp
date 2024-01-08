@@ -125,7 +125,6 @@ void MainWindow::on_modifierDonnerEtud_clicked()
         }
     }
 
-    // Set edit triggers to allow specific actions
     ui->tableDonneeEtud->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::EditKeyPressed);
 }
 
@@ -203,7 +202,7 @@ void MainWindow::on_Authentifier_Enseignant_clicked()
             }
             QVariantList etudiantsSameFiliere = dbManager.GetEtudiantsSameFiliere(enseignant.getSpecialiteEnseignant());
             int rowCount = etudiantsSameFiliere.size();
-            ui->tableNoteEtudiants->setRowCount(rowCount); // Set the correct number of rows
+            ui->tableNoteEtudiants->setRowCount(rowCount); 
 
             for (int i = 0; i < rowCount; ++i) {
                 QVariantMap etudiantData = etudiantsSameFiliere[i].toMap();
@@ -255,7 +254,6 @@ void MainWindow::on_envoyer_resultat_clicked()
     int rows = ui->tableNoteEtudiants->rowCount();
 
     for (int i = 0; i < rows; ++i) {
-        // Récupérer les informations nécessaires depuis votre tableau
         QString noteMatiere1 = ui->tableNoteEtudiants->item(i, 2)->text(); // Colonne 3 pour la première matière
         QString noteMatiere2 = ui->tableNoteEtudiants->item(i, 3)->text(); // Colonne 4 pour la deuxième matière
         QString noteMatiere3 = ui->tableNoteEtudiants->item(i, 4)->text(); // Colonne 5 pour la troisième matière
@@ -263,7 +261,6 @@ void MainWindow::on_envoyer_resultat_clicked()
              QMessageBox::warning(this, "attention", "veuillez saisir les notes pour tous les étudiants !");
              return;
         }
-        // Récupérer les autres informations nécessaires, par exemple, le numéro d'étudiant et le numéro de cours
         int numeroEtudiant = ui->tableNoteEtudiants->item(i, 0)->text().toInt();
         int numeroCours1 = lesCours[0].getNumeroCours();
         int numeroCours2 = lesCours[1].getNumeroCours();
