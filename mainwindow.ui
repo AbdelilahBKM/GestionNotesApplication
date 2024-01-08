@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1476</width>
+    <height>905</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion des notes</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1471</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>700</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="PageUtilisateur">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Authentifier Etudiant&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>481</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>16</pointsize>
+        <hintingpreference>PreferDefaultHinting</hintingpreference>
+       </font>
+      </property>
+      <property name="title">
+       <string>formulaire pour Authentifier les Etudiants</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>83</y>
+         <width>431</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>45</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>16</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <property name="text">
+        <string>Votre Nom :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>158</y>
+         <width>431</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Votre Prenom :</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>213</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>13</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Génie Informatique</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Génie Civil</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Génie Electrique</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>210</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>specialité :</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>260</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>13</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>260</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date naissance :</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Authentifier</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_donneesEtud">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>10</y>
+        <width>791</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Les Données des etudiant Authentifier</string>
+      </property>
+      <widget class="QTableWidget" name="tableDonneeEtud">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>600</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="dragEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>404</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>404</number>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>50</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>50</number>
+       </attribute>
+       <attribute name="verticalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>numero d'etudiant:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>nom:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>prenom:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Date de naissance:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Filére:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>cours 1:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Cours 2:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Cours 3:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>les données:</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="6" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item row="7" column="0">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="modifierDonnerEtud">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>40</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>modifier</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sauvegarderDonneeEtud">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>110</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>sauvegarder</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="annulerModifEtud">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>190</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>annuler</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Affiche_resultat">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>480</y>
+        <width>1301</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Afficher les Resultat de l'etudiant:</string>
+      </property>
+      <widget class="QTableWidget" name="tableResultat">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>1181</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>342</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>342</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>83</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>83</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>Titre de Cours</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Resultat</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Cours 1</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cours 2</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cours 3</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_authentifierEnseignant">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>481</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>16</pointsize>
+        <hintingpreference>PreferDefaultHinting</hintingpreference>
+       </font>
+      </property>
+      <property name="title">
+       <string>formulaire pour Authentifier les Enseignants</string>
+      </property>
+      <widget class="QLineEdit" name="nomEnseignant">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>83</y>
+         <width>431</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>45</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>16</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nom de L'enseignant:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prenomEnseignant">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>158</y>
+         <width>431</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prenom de L'enseignant:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Authentifier_Enseignant">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Authentifier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>202</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>16</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+       <property name="text">
+        <string>Numero de L'Enseignant:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="numeroEnseignant">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>431</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <hintingpreference>PreferDefaultHinting</hintingpreference>
+        </font>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_tableNote">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1471</width>
+        <height>801</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QTableWidget" name="tableNoteEtudiants">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>1471</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>291</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>291</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>30</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>30</number>
+       </attribute>
+       <row/>
+       <column>
+        <property name="text">
+         <string>Numero Etudiant</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>nom d'étudiant</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>cours 1</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>cours 2</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>cours 3</string>
+        </property>
+       </column>
+       <item row="0" column="1">
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="envoyer_resultat">
+       <property name="geometry">
+        <rect>
+         <x>1180</x>
+         <y>710</y>
+         <width>261</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Envoyer Les Resultat</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ActualiserTableEtuds">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>710</y>
+         <width>261</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Actualiser </string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1476</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGestion_des_Notes">
+    <property name="title">
+     <string>Gestion des Notes</string>
+    </property>
+   </widget>
+   <addaction name="menuGestion_des_Notes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
